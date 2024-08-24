@@ -1,0 +1,10 @@
+login	Password	Role
+-------------------------------
+john 	Analgin100!	user
+doe 	Crocin100!	admin
+sam 	Analgin100!	user
+bob 	Crocin100!	admin
+eric 	Analgin100!	user
+laura 	Crocin100!	admin
+anne 	Analgin100!	user
+nancy 	Crocin100!	admin

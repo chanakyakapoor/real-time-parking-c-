@@ -1,0 +1,44 @@
+{
+  "Users": [
+    {
+      "loginname": "john",
+      "pwSHA256ChkSum": "4d93ce04370f4b23c1c0c597716744408f1d2283c37b62e0abd7974a751ec958",
+      "role": "user"
+    },
+    {
+      "loginname": "doe",
+      "pwSHA256ChkSum": "39415d2f032448292ddd4361cd454e8e69c60e432aef0fbc7fb2633fd1e87f86",
+      "role": "admin"
+    },
+    {
+      "loginname": "sam",
+      "pwSHA256ChkSum": "4d93ce04370f4b23c1c0c597716744408f1d2283c37b62e0abd7974a751ec958",
+      "role": "user"
+    },
+    {
+      "loginname": "bob",
+      "pwSHA256ChkSum": "39415d2f032448292ddd4361cd454e8e69c60e432aef0fbc7fb2633fd1e87f86",
+      "role": "admin"
+    },
+    {
+      "loginname": "eric",
+      "pwSHA256ChkSum": "4d93ce04370f4b23c1c0c597716744408f1d2283c37b62e0abd7974a751ec958",
+      "role": "user"
+    },
+    {
+      "loginname": "laura",
+      "pwSHA256ChkSum": "39415d2f032448292ddd4361cd454e8e69c60e432aef0fbc7fb2633fd1e87f86",
+      "role": "admin"
+    },
+    {
+      "loginname": "anne",
+      "pwSHA256ChkSum": "4d93ce04370f4b23c1c0c597716744408f1d2283c37b62e0abd7974a751ec958",
+      "role": "user"
+    },
+    {
+      "loginname": "nancy",
+      "pwSHA256ChkSum": "39415d2f032448292ddd4361cd454e8e69c60e432aef0fbc7fb2633fd1e87f86",
+      "role": "admin"
+    }
+  ]
+}

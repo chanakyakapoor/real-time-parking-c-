@@ -1,0 +1,86 @@
+Running main() from /build/googletest-j5yxiC/googletest-1.10.0/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TestGarageOperations
+[ RUN      ] TestGarageOperations.SmallParkingLot
+Executing query to check if vehicle is already parked: SELECT COUNT(*) FROM Parking WHERE vehicleNumber='test_vnumberN1' AND exitTime IS NULL;
+Already parked count for vehicle test_vnumberN1: 0
+Executing insert query: INSERT INTO Parking (vehicleNumber, licenseNumber, entryTime) VALUES ('test_vnumberN1', 'test_lnumberN1', 1721278595);
+Vehicle test_vnumberN1 allocated slot on floor 0, slot 0
+Executing query to check if vehicle is already parked: SELECT COUNT(*) FROM Parking WHERE vehicleNumber='test_vnumberN1' AND exitTime IS NULL;
+Already parked count for vehicle test_vnumberN1: 1
+Executing query to check if vehicle is already parked: SELECT COUNT(*) FROM Parking WHERE vehicleNumber='test_vnumberN2' AND exitTime IS NULL;
+Already parked count for vehicle test_vnumberN2: 0
+Executing insert query: INSERT INTO Parking (vehicleNumber, licenseNumber, entryTime) VALUES ('test_vnumberN2', 'test_lnumberN2', 1721278595);
+Vehicle test_vnumberN2 allocated slot on floor 1, slot 0
+Executing query to check if vehicle is already parked: SELECT COUNT(*) FROM Parking WHERE vehicleNumber='test_vnumberD1' AND exitTime IS NULL;
+Already parked count for vehicle test_vnumberD1: 0
+Vacating vehicle: test_vnumberN1
+Parking fee: 100
+Fine: 0
+Executing update query: UPDATE Parking SET exitTime=1721278595, parkingFees=100, fineFees=0 WHERE vehicleNumber='test_vnumberN1' AND exitTime IS NULL;
+Vehicle test_vnumberN1 vacated from floor 0, slot 0
+Executing query to collect parking fees: SELECT entryTime, exitTime, parkingFees FROM Parking WHERE entryTime >= strftime('%s', '2024-07-17') AND exitTime <= strftime('%s', '2024-07-19');
+Received data row:
+entryTime: 1721278595
+exitTime: 1721278595
+parkingFees: 100
+Entry Time: 1721278595, Exit Time: 1721278595, Parking Fees: 100
+Total parking fees collected from 17/07/24 to 19/07/24: 100
+Executing query to collect fines: SELECT fineFees FROM Parking WHERE entryTime >= strftime('%s', '2024-07-17') AND exitTime <= strftime('%s', '2024-07-19');
+Received data row:
+fineFees: 0
+Fine Fees: 0
+Total fines collected from 17/07/24 to 19/07/24: 0
+Executing query to check if vehicle is already parked: SELECT COUNT(*) FROM Parking WHERE vehicleNumber='test_vnumberN1' AND exitTime IS NULL;
+Already parked count for vehicle test_vnumberN1: 0
+Executing insert query: INSERT INTO Parking (vehicleNumber, licenseNumber, entryTime) VALUES ('test_vnumberN1', 'test_lnumberN1', 1721278595);
+Vehicle test_vnumberN1 allocated slot on floor 0, slot 0
+Vacating vehicle: test_vnumberN1
+Parking fee: 100
+Fine: 0
+Executing update query: UPDATE Parking SET exitTime=1721278595, parkingFees=100, fineFees=0 WHERE vehicleNumber='test_vnumberN1' AND exitTime IS NULL;
+Vehicle test_vnumberN1 vacated from floor 0, slot 0
+[       OK ] TestGarageOperations.SmallParkingLot (55 ms)
+[----------] 1 test from TestGarageOperations (55 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (55 ms total)
+[  PASSED  ] 1 test.
+Running main() from /build/googletest-j5yxiC/googletest-1.10.0/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from TestAuthentication
+[ RUN      ] TestAuthentication.RegularUser
+[       OK ] TestAuthentication.RegularUser (1 ms)
+[ RUN      ] TestAuthentication.AdminUser
+[       OK ] TestAuthentication.AdminUser (0 ms)
+[ RUN      ] TestAuthentication.InvalidUser
+[       OK ] TestAuthentication.InvalidUser (0 ms)
+[----------] 3 tests from TestAuthentication (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 3 tests.
+Running main() from /build/googletest-j5yxiC/googletest-1.10.0/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TestConstructor
+[ RUN      ] TestConstructor.Parameterized
+[       OK ] TestConstructor.Parameterized (0 ms)
+[----------] 1 test from TestConstructor (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /build/googletest-j5yxiC/googletest-1.10.0/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TestConstructor
+[ RUN      ] TestConstructor.Parameterized
+[       OK ] TestConstructor.Parameterized (0 ms)
+[----------] 1 test from TestConstructor (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.

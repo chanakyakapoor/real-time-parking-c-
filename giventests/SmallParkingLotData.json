@@ -1,0 +1,6 @@
+{
+	"FloorsData": [
+			{ "FloorNumber" : 0, "FloorName": "F0", "NormalParkingSlots": 1, "DisabledParkingSlots": 0 },
+			{ "FloorNumber" : 1, "FloorName": "F1", "NormalParkingSlots": 1, "DisabledParkingSlots": 0 }
+		]
+}
